@@ -119,8 +119,15 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 5vh;
+}
+
+.maps{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -144,4 +151,36 @@ ul{
 
 .pics1 img{
     height: auto;
+}
+
+
+/* Contact Me Form */
+.forms{
+    margin-bottom: 5vh;
+}
+
+.form-group{
+    padding: 2%;
+    background: none;
+}
+
+.forms label{
+    color: rgb(255, 255, 255);
+    background: rgb(24, 169, 24);
+    border-radius: 40%;
+    padding: 10px;
+}
+
+.forms input{
+    background: white;
+    border-radius: 40%;
+    padding: 10px;
+}
+
+.forms button{
+    background-color: rgb(24, 169, 24);
+    color: white;
+    border: 2px solid black;
+    border-radius: 40%;
+    padding: 10px;
 }
