@@ -1,50 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* Utilities */
 *{
-    margin: 2vh 5vw;
+    /* margin: 2vh 5vw; */
+    margin: 2%;
     padding: 0;
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
+    /* background: url(./Images/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    background-image: url(./Images/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-size: 2vh;
+}
+
+h1{
+    font-size: 4.5vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.requirements p, .requirements ul, .kinder-prep-details p, .kinder-prep-details ul, .location p{
+    font-size: 1.7vh;
+}
+
+
+/* Heading */
+.topnav{
+    position: sticky;
+    top: 0;
 }
 
 .heading{
+    background: none;
+    margin-bottom: .5vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: rebeccapurple;
-    margin-bottom: 5px;
+}
+
+.heading h1{
+    background: none;
 }
 
 .btn{
-    font-size: 12pt;
-    color: aliceblue;
+    background: none;
+    font-size: 1.5vh;
+    background-color: white;
+    color: purple;
 }
 
+
+/* Nav Bar */
 .nav-bar{
+    background: none;
     display: flex;
-    display: inline;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+    font-size: 2vh;
 }
 
+.nav-bar a{
+    background: none;
+}
+
+
+/* Kinder Prep Details and Requirements */
 .kinder-prep-details{
     color: rgb(156, 57, 255);
-}
-
-.kinder-prep-details ul{
-    list-style-type: none;
+    font-size: 2vh;
+    margin-bottom: 5vh;
 }
 
 .requirements{
     color: blue;
+    font-size: 2vh;
+    margin-bottom: 5vh;
 }
 
-.requirements p{
-    font-size: 10pt;
+#specialchar{
+    font-size: 1vh;
 }
 
-.location{
-    color: rgb(0, 153, 255);
-    font-size: 18pt;
+
+/* About Me */
+.about-me{
+    margin-bottom: 10vh;
+    color: rgb(216, 18, 147);
+}
+
+.name-pic{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.about-me p{
+    font-size: 1.5vh;
+}
+
+
+/* Location*/
+.location{
+    color: rgb(0, 153, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+
+/* Class Pics */
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.pics1{
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pics1 img{
+    height: auto;
 }
